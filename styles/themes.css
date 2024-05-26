@@ -4,3 +4,38 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-dark {
+    --card-text-fw: 465;
+    --card-title-fw: 785;
+    --bg-color: #000;
+    --accent-color: #00CC14;
+    --label-color: rgba(0, 0, 0, 0.5);
+    --bg-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+                repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+                repeating-linear-gradient(to bottom, #007f0c, #004306);
+}
+
+
+:root.theme-light {
+    --card-text-fw: 400;
+    --card-title-fw: 700;
+    --bg-color: #fff;
+    --accent-color: #000;
+    --label-color: rgba(255, 255, 255, 0.5);
+    --bg-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+                repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+                linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --card-text-fw: 465;
+        --card-title-fw: 785;
+        --bg-color: #000;
+        --accent-color: #00CC14;
+        --label-color: rgba(0, 0, 0, 0.5);
+        --bg-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+                    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+                    repeating-linear-gradient(to bottom, #007f0c, #004306);
+    }
+}
