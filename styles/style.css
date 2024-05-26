@@ -210,8 +210,9 @@
 
 .card__icon-button {
   background-color: transparent;
-  border: none;
-  padding-inline-end: 12px;
+  margin-inline-end: 12px;
+  border: solid 2px transparent;
+  max-block-size: 38.59px;
 }
 
 .like-icon {
@@ -224,10 +225,13 @@
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   line-height: 0.9;
+  position: relative;
+  
 }
 
 .card__like-button {
   padding: 11px 35px;
+  
 }
 
 .button__text {
@@ -241,4 +245,37 @@
 
 .save__button {
   padding: 13px 15px;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 var(--accent-color);
+  transition: 0.3s ease;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  inline-size: 100%;
+  block-size: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: var(--blend-color);
+  color: var(--blend-color);
+  inset: 0;
+  mix-blend-mode: difference;
+}
+
+.button:hover::after {
+  transform: scaleX(1);
+  transition: 0.5s ease-in-out;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--accent-color);
+  transition: 0.3s ease;
 }
