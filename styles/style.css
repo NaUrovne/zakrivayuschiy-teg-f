@@ -149,7 +149,7 @@
   padding: 3px 10px;
 }
 
-.img__container {
+.card__img-container {
   position: relative;
   max-block-size: 696px;
   border-block-start: solid 2px var(--accent-color);
@@ -162,7 +162,7 @@
   aspect-ratio: 1 / 1;
 }
 
-.img__label {
+.card__label {
   position: absolute;
   color: var(--accent-color);
   font-family: var(--accent-font), sans-serif;
@@ -179,14 +179,14 @@
   (text-stroke: 1px var(--label-color)) or
     (-webkit-text-stroke: 1px var(--label-color))
 ) {
-  img__label {
+  .card__label {
     -webkit-text-stroke: 1px var(--label-color);
     text-stroke: 1px var(--label-color);
     text-shadow: none;
   }
 }
 
-.card__text__container {
+.card__text-container {
   padding: 28px 25px;
 }
 
@@ -200,7 +200,7 @@
   padding-block-end: 27px;
 }
 
-.action__container {
+.card__action-container {
   display: flex;
   justify-content: flex-end;
   margin: 0 23px 24px 0;
@@ -263,11 +263,11 @@ button {
   color: var(--blend-color);
   inset: 0;
   mix-blend-mode: difference;
+  transition: 0.5s ease-in-out;
 }
 
 .button:hover::after {
   transform: scaleX(1);
-  transition: 0.5s ease-in-out;
 }
 
 .card__icon-button:focus {
@@ -282,7 +282,7 @@ button {
 .dialog {
   background-color: var(--bg-color);
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, sans-serif);
   border: 2px solid var(--accent-color);
   max-inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
 }
@@ -298,6 +298,7 @@ button {
   text-transform: uppercase;
   line-height: 1.5;
   font-size: 14px;
+  max-inline-size: 234px;
 }
 
 .dialog__button {

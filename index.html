@@ -19,8 +19,8 @@
   <body class="page">
     <header class="header container">
       <div class="header__text">
-        <h1 class="header__title">&lt;/html&gt;</h1>
-        <h2 class="header__subtitle">закрывающий тег</h2>
+        <a class="header__title">&lt;/html&gt;</a>
+        <h1 class="header__subtitle">закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -50,14 +50,14 @@
     </header>
     <main>
       <article class="card container">
-        <h3 class="card__title">
+        <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
-        <div class="img__container">
-          <img loading="lazy" src="./images/1.jpg" alt="Cat with sunglasses" class="card__image" />
-          <p class="img__label">&lt;/easy&gt;</p>
+        </h2>
+        <div class="card__img-container">
+          <img loading="lazy" src="./images/1.jpg" alt="Кот в солнцезащитных очках" class="card__image" />
+          <p class="card__label">&lt;/easy&gt;</p>
         </div>
-        <div class="card__text__container">
+        <div class="card__text-container">
           <p class="card__text">
             Это было самое начало пути. На этом этапе важно было проникнуться
             основами и настроиться на учёбу. И, возможно, подумать, как новые
@@ -67,8 +67,8 @@
             С универа не любил веб программирование... Но кажется тут всё не так сложно.
           </p>
         </div>
-        <div class="action__container">
-          <button type="button" class="card__icon-button">
+        <div class="card__action-container">
+          <button type="button" class="card__icon-button" aria-labelledby="label">
             <svg
               class="like-icon"
               width="39"
@@ -104,17 +104,17 @@
             </svg>
           </button>
           <button type="button" class="card__like-button button">
-            <span class="button__text">Like</span>
+            <span id="label" class="button__text">Like</span>
           </button>
         </div>
       </article>
       <article class="card container">
-        <h3 class="card__title">1 спринт: Я — чистый лист</h3>
-        <div class="img__container">
-          <img loading="lazy" src="./images/2.jpeg" alt="Cat meme" class="card__image greyscale" />
-          <p class="img__label">&lt;/semantics&gt;</p>
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+        <div class="card__img-container">
+          <img loading="lazy" src="./images/2.jpeg" alt="Кот мем" class="card__image greyscale" />
+          <p class="card__label">&lt;/semantics&gt;</p>
         </div>
-        <div class="card__text__container">
+        <div class="card__text-container">
           <p class="card__text">
             На первых этапах мы работали со страхами и сомнениями, которые часто
             испытывают новички. Один из них — страх перед чистым листом. Это,
@@ -126,8 +126,8 @@
             Семантика!? Что!? Так, ютуб, один фронтендер пихает повсюду дивы, другой делает всё... СЕМАНТИЧНО! Понял!
           </p>
         </div>
-        <div class="action__container">
-          <button type="button" class="card__icon-button">
+        <div class="card__action-container">
+          <button type="button" class="card__icon-button" aria-labelledby="label">
             <svg
               class="like-icon"
               width="39"
@@ -168,12 +168,12 @@
         </div>
       </article>
       <article class="card container">
-        <h3 class="card__title">1 спринт: А если не получится?</h3>
-        <div class="img__container">
-          <img loading="lazy" src="./images/3.jpg" alt="Cat with hoodie on" class="card__image saturate" />
-          <p class="img__label">&lt;/mastered&gt;</p>
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
+        <div class="card__img-container">
+          <img loading="lazy" src="./images/3.jpg" alt="Кот в худи" class="card__image saturate" />
+          <p class="card__label">&lt;/mastered&gt;</p>
         </div>
-        <div class="card__text__container">
+        <div class="card__text-container">
           <p class="card__text">
             Первый проект — позади! Но это всё ещё самое начало пути. Радость
             могла быстро померкнуть и смениться ожиданием провала. Или вы,
@@ -183,8 +183,8 @@
             А я быстро справился, может то, что я ненавидел, всё таки моё?
           </p>
         </div>
-        <div class="action__container">
-          <button type="button" class="card__icon-button">
+        <div class="card__action-container">
+          <button type="button" class="card__icon-button" aria-labelledby="label">
             <svg
               class="like-icon"
               width="39"
@@ -225,12 +225,12 @@
         </div>
       </article>
       <article class="card container">
-        <h3 class="card__title">2 спринт: Погоня за идеалом</h3>
-        <div class="img__container">
-          <img loading="lazy" src="./images/4.jpg" alt="Cat holding money" class="card__image hue" />
-          <p class="img__label">&lt;/accessibility&gt;</p>
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+        <div class="card__img-container">
+          <img loading="lazy" src="./images/4.jpg" alt="Кот держит купюры" class="card__image hue" />
+          <p class="card__label">&lt;/accessibility&gt;</p>
         </div>
-        <div class="card__text__container">
+        <div class="card__text-container">
           <p class="card__text">
             На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
             понять, как много ещё впереди. Вы могли попытаться погнаться за
@@ -242,8 +242,8 @@
             Пугающе много текста и новых понятий... Похоже доступность может стать визитной карточкей фронт эндера в скором времени, надо вникнуть...
           </p>
         </div>
-        <div class="action__container">
-          <button type="button" class="card__icon-button">
+        <div class="card__action-container">
+          <button type="button" class="card__icon-button" aria-labelledby="label">
             <svg
               class="like-icon"
               width="39"
@@ -284,12 +284,12 @@
         </div>
       </article>
       <article class="card container">
-        <h3 class="card__title">2 спринт: О тех, кто рядом</h3>
-        <div class="img__container">
-          <img loading="lazy" src="./images/5.jpeg" alt="Cat from ambulance" class="card__image invert" />
-          <p class="img__label">&lt;/support&gt;</p>
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+        <div class="card__img-container">
+          <img loading="lazy" src="./images/5.jpeg" alt="Кот из скорой помощи" class="card__image invert" />
+          <p class="card__label">&lt;/support&gt;</p>
         </div>
-        <div class="card__text__container">
+        <div class="card__text-container">
           <p class="card__text">
             Всё это время вы были не одиноки (хотя, возможно, иногда и
             чувствовали, что одни против целого мира). Вас окружали
@@ -302,8 +302,8 @@
             Живой чат в пачке, всегда есть к кому обратиться, я точно не пропаду!
           </p>
         </div>
-        <div class="action__container">
-          <button type="button" class="card__icon-button">
+        <div class="card__action-container">
+          <button type="button" class="card__icon-button" aria-labelledby="label">
             <svg
               class="like-icon"
               width="39"
@@ -344,12 +344,12 @@
         </div>
       </article>
       <article class="card container">
-        <h3 class="card__title">3 спринт: Обходные стратегии</h3>
-        <div class="img__container">
-          <img loading="lazy" src="./images/6.jpg" alt="Cat shocked" class="card__image sepia" />
-          <p class="img__label">&lt;/hard_stuff&gt;</p>
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+        <div class="card__img-container">
+          <img loading="lazy" src="./images/6.jpg" alt="Кот в шоке" class="card__image sepia" />
+          <p class="card__label">&lt;/hard_stuff&gt;</p>
         </div>
-        <div class="card__text__container">
+        <div class="card__text-container">
           <p class="card__text">
             На этом курсе вы постоянно решали разные задачи. В какой-то момент
             вам могло показаться, что решения просто иссякли. Значит, пришло
@@ -359,8 +359,8 @@
             Вот и начались сложности, адаптиция... новые еденицы измерения... да как в этом разобраться? Пройдусь по теории еще пару раз.
           </p>
         </div>
-        <div class="action__container">
-          <button type="button" class="card__icon-button">
+        <div class="card__action-container">
+          <button type="button" class="card__icon-button" aria-labelledby="label">
             <svg
               class="like-icon"
               width="39"
@@ -401,12 +401,12 @@
         </div>
       </article>
       <article class="card container">
-        <h3 class="card__title">3 спринт: Когда опускаются руки</h3>
-        <div class="img__container">
-          <img loading="lazy" src="./images/7.jpeg" alt="Cat relaxing" class="card__image blur" />
-          <p class="img__label">&lt;/relax&gt;</p>
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+        <div class="card__img-container">
+          <img loading="lazy" src="./images/7.jpeg" alt="Кот отдыхает" class="card__image blur" />
+          <p class="card__label">&lt;/relax&gt;</p>
         </div>
-        <div class="card__text__container">
+        <div class="card__text-container">
           <p class="card__text">
             Во время учёбы часто возникает чувство, когда не знаешь, за что
             хвататься. Вроде и проектную пора сдавать, и задачи хочется
@@ -418,8 +418,8 @@
             Обнаружен волшебный способ выбраться из тупика - пойти прогуляться. В голове сразу начнут генерироваться новые идеи!
           </p>
         </div>
-        <div class="action__container">
-          <button type="button" class="card__icon-button">
+        <div class="card__action-container">
+          <button type="button" class="card__icon-button" aria-labelledby="label">
             <svg
               class="like-icon"
               width="39"
@@ -460,12 +460,12 @@
         </div>
       </article>
       <article class="card container">
-        <h3 class="card__title">«Сейчас я здесь»</h3>
-        <div class="img__container">
-          <img loading="lazy" src="./images/8.jpg" alt="Cat excited" class="card__image multiple" />
-          <p class="img__label">&lt;/excitement&gt;</p>
+        <h2 class="card__title">«Сейчас я здесь»</h2>
+        <div class="card__img-container">
+          <img loading="lazy" src="./images/8.jpg" alt="Кот на паруснике в океане" class="card__image multiple" />
+          <p class="card__label">&lt;/excitement&gt;</p>
         </div>
-        <div class="card__text__container">
+        <div class="card__text-container">
           <p class="card__text">
             Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
             Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
@@ -478,8 +478,8 @@
             А вёрстка - это совсем не скучно. Вперед к джаваскрипту и новым знаниям!
           </p>
         </div>
-        <div class="action__container">
-          <button type="button" class="card__icon-button">
+        <div class="card__action-container">
+          <button type="button" class="card__icon-button" aria-labelledby="label">
             <svg
               class="like-icon"
               width="39"
@@ -538,11 +538,9 @@
         <svg width="39" height="39" viewBox="0 0 21 21">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <h2 class="dialog__title">
-          Вставьте<br />
-          дискету, чтобы<br />
-          продолжить
-        </h2>
+        <h3 class="dialog__title">
+          Вставьте дискету, чтобы продолжить
+        </h3>
       </div>
       <button
         type="button"
