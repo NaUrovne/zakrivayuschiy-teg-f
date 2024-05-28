@@ -171,9 +171,6 @@
   inset-inline-end: 23px;
   text-transform: uppercase;
   mix-blend-mode: hard-light;
-}
-
-.img__label {
   text-shadow: -1px 0 var(--label-color), 0 1px var(--label-color),
     1px 0 var(--label-color), 0 -1px var(--label-color);
 }
